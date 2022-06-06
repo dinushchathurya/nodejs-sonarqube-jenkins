@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/dinushchathurya/jenkins-nodejs-sample-project/issues"
   },
-  "homepage": "https://github.com/dinushchathurya/jenkins-nodejs-sample-project#readme"
+  "homepage": "https://github.com/dinushchathurya/jenkins-nodejs-sample-project#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
 }
