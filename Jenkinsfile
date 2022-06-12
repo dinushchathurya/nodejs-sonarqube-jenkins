@@ -10,7 +10,7 @@ pipeline {
     stage('bash') {
       steps {
         sh '''#!/bin/sh     
-          ssh ubuntu@13.213.31.98 <  cd /var/www/jenkins-nodejs-sample-project 
+          ssh -tt -o StrictHostKeyChecking=no ubuntu@13.213.31.98 <  cd /var/www/jenkins-nodejs-sample-project 
           git pull origin master    
           npm install --production      
           pm2 restart all
