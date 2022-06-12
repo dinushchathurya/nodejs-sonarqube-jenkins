@@ -1,5 +1,5 @@
 #!/bin/sh     
-ssh -t ubuntu@13.213.31.98 <<EOF
+ssh -o StrictHostKeyChecking=no ubuntu@13.213.31.98 <<EOF
    cd /var/www/jenkins-nodejs-sample-project
    git pull origin master
    npm install --production
